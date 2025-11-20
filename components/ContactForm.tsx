@@ -141,7 +141,7 @@ const ContactForm: React.FC = () => {
 
               <a 
                 href="mailto:yossishor30@gmail.com"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold text-white transition-all duration-200 glass-panel rounded-lg hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600 focus:ring-offset-dark-900"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold text-slate-900 dark:text-white transition-all duration-200 glass-panel rounded-lg hover:bg-slate-200 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-600 focus:ring-offset-dark-900 border border-slate-300 dark:border-white/10"
               >
                 <MailIcon className="w-5 h-5" />
                 Direct Email
@@ -150,14 +150,14 @@ const ContactForm: React.FC = () => {
           </form>
 
           {/* Social Links */}
-          <div className="mt-8 pt-8 border-t border-white/10">
-            <p className="text-center text-slate-400 text-sm mb-4">Or connect with me on:</p>
+          <div className="mt-8 pt-8 border-t border-slate-200 dark:border-white/10">
+            <p className="text-center text-slate-600 dark:text-slate-400 text-sm mb-4">Or connect with me on:</p>
             <div className="flex justify-center gap-6">
               <a 
                 href="https://www.linkedin.com/in/yossishor/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-slate-400 hover:text-blue-400 transition-colors"
+                className="text-slate-700 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
               >
                 LinkedIn
               </a>
@@ -165,7 +165,7 @@ const ContactForm: React.FC = () => {
                 href="https://github.com/yosshor" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
+                className="text-slate-700 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-medium"
               >
                 GitHub
               </a>
