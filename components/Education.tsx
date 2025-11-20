@@ -152,7 +152,7 @@ const Education: React.FC = () => {
           {educationData.map((item) => (
             <div 
               key={item.id} 
-              className="glass-panel rounded-2xl p-4 sm:p-6 md:p-8 border-t border-white/10 hover:border-white/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group"
+              className="glass-panel rounded-2xl p-4 sm:p-6 md:p-8 border-t border-slate-200 dark:border-white/10 hover:border-brand-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl group"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
                 <div className="flex-1">
@@ -161,12 +161,12 @@ const Education: React.FC = () => {
                       {getTypeLabel(item.type)}
                     </span>
                     {item.grade && (
-                      <span className="px-3 py-1 rounded-full bg-green-500/20 border border-green-500/30 text-green-300 text-xs font-bold">
+                      <span className="px-3 py-1 rounded-full bg-green-100 dark:bg-green-500/20 border border-green-300 dark:border-green-500/30 text-green-700 dark:text-green-300 text-xs font-bold">
                         Grade: {item.grade}
                       </span>
                     )}
                     {item.credentialId && (
-                      <span className="px-3 py-1 rounded-full bg-slate-500/20 border border-slate-500/30 text-slate-300 text-xs font-mono">
+                      <span className="px-3 py-1 rounded-full bg-slate-200 dark:bg-slate-500/20 border border-slate-300 dark:border-slate-500/30 text-slate-700 dark:text-slate-300 text-xs font-mono">
                         ID: {item.credentialId}
                       </span>
                     )}
@@ -216,22 +216,22 @@ const Education: React.FC = () => {
                 </div>
 
                 <div className="md:text-right">
-                  <span className="inline-block px-4 py-2 rounded-lg bg-dark-800 text-slate-300 border border-slate-700 text-sm font-mono">
+                  <span className="inline-block px-4 py-2 rounded-lg bg-slate-200 dark:bg-dark-800 text-slate-700 dark:text-slate-300 border border-slate-300 dark:border-slate-700 text-sm font-mono">
                     {item.period}
                   </span>
                 </div>
               </div>
 
               {item.achievements && item.achievements.length > 0 && (
-                <div className="mt-6 pt-6 border-t border-white/5">
-                  <h4 className="text-sm font-semibold text-slate-400 uppercase tracking-wide mb-3">
+                <div className="mt-6 pt-6 border-t border-slate-200 dark:border-white/5">
+                  <h4 className="text-sm font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wide mb-3">
                     Key Highlights:
                   </h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {item.achievements.map((achievement, index) => (
-                      <li key={index} className="flex items-start gap-2 text-slate-300 text-sm">
+                      <li key={index} className="flex items-start gap-2 text-slate-700 dark:text-slate-300 text-sm">
                         <svg 
-                          className="w-5 h-5 text-brand-400 flex-shrink-0 mt-0.5" 
+                          className="w-5 h-5 text-brand-600 dark:text-brand-400 flex-shrink-0 mt-0.5" 
                           fill="none" 
                           stroke="currentColor" 
                           viewBox="0 0 24 24"
