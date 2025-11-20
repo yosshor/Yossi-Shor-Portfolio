@@ -19,68 +19,82 @@ const educationData: EducationItem[] = [
     period: "Mar 2024 - Apr 2025",
     grade: "99",
     type: "certification",
-    description: "Comprehensive full-stack web development program covering frontend and backend technologies.",
+    description: "Full Stack Web Development (Frontend & Backend) - 564-hour comprehensive program focused on both frontend and backend development.",
     achievements: [
       "Achieved exceptional grade of 99/100",
-      "Built 10+ real-world projects",
-      "Mastered React, TypeScript, Node.js, and MongoDB",
-      "Specialized in modern web architecture patterns"
+      "Built complete web applications using Node.js, Express, React, and SQL databases",
+      "Mastered TypeScript, React.js, and modern development practices",
+      "Completed real-world full-stack projects"
     ]
   },
   {
     id: 2,
-    degree: "BSc in Electrical Engineering",
-    institution: "Academic Institution",
-    period: "Completed",
-    type: "degree",
-    description: "Bachelor of Science degree with focus on electrical engineering fundamentals, electronics, and system design.",
+    degree: "NAYA-College Data Engineering, Big Data Engineer",
+    institution: "NAYA-College",
+    period: "Jun 2022 - Apr 2023",
+    type: "course",
+    description: "Data Engineering course (320 academic hours) focusing on big data technologies and data pipeline development.",
     achievements: [
-      "Strong foundation in mathematics and physics",
-      "Circuit design and analysis",
-      "Digital signal processing",
-      "Embedded systems programming"
+      "Python programming for data engineering",
+      "Apache Spark Streaming for big data processing",
+      "Designed and implemented data architectures",
+      "Built scalable data pipelines and ETL processes"
     ]
   },
   {
     id: 3,
-    degree: "Data Engineering & Big Data",
-    institution: "Naya Project - Professional Training",
-    period: "2023",
+    degree: "Cyber Course",
+    institution: "ITQ college",
+    period: "May 2021 - Aug 2021",
     type: "course",
-    description: "Intensive data engineering program focusing on big data technologies and data pipeline development.",
+    description: "Practical training program in the field of servers, networks, SOC, and Firewalls in a joint program with leading cybersecurity companies.",
     achievements: [
-      "Apache Airflow workflow orchestration",
-      "Python data processing with Pandas",
-      "Streamlit dashboard development",
-      "Big data analytics and visualization"
+      "Server administration and configuration",
+      "Network security implementation",
+      "Security Operations Center (SOC) operations",
+      "Firewall management and protection strategies"
     ]
   },
   {
     id: 4,
-    degree: "Machine Learning & Deep Learning Bootcamp",
-    institution: "Professional Training",
-    period: "2019-2020",
+    degree: "Electrical and Electronics Engineering",
+    institution: "Ben-Gurion University of the Negev",
+    period: "2020 - 2021",
     type: "course",
-    description: "Comprehensive bootcamp covering machine learning algorithms, deep learning, and neural networks.",
+    description: "Advanced courses in Electronics & Physics Field including semiconductor technology and electronic systems.",
     achievements: [
-      "Deep learning with PyTorch",
-      "Sound recognition technologies",
-      "Neural network architectures",
-      "Applied ML project development"
+      "Semiconductor device physics",
+      "Electronic circuit analysis",
+      "Physics field applications",
+      "Advanced electronics concepts"
     ]
   },
   {
     id: 5,
-    degree: "Computer & Network Security",
-    institution: "Professional Training",
-    period: "Completed",
+    degree: "Deep Learning & Machine Learning Bootcamp",
+    institution: "Primrose",
+    period: "2019 - 2020",
     type: "course",
-    description: "Intensive cybersecurity course covering cloud security, network protection, and enterprise systems.",
+    description: "Comprehensive bootcamp covering theoretical and practical implementation of machine learning algorithms and deep learning.",
     achievements: [
-      "Microsoft Azure cloud security",
-      "Checkpoint firewall configuration",
-      "Windows Server administration",
-      "Network security best practices"
+      "Linear and Logistic regression algorithms",
+      "K-Nearest Neighbors (KNN) implementation",
+      "Neural network architectures",
+      "Practical ML project development"
+    ]
+  },
+  {
+    id: 6,
+    degree: "BSc, Electrical and Electronics Engineering",
+    institution: "Shenkar - Engineering. Design. Art.",
+    period: "2014 - 2018",
+    type: "degree",
+    description: "Bachelor of Science degree in Electrical and Electronics Engineering with comprehensive coursework in engineering fundamentals.",
+    achievements: [
+      "Strong foundation in electrical engineering principles",
+      "Circuit design and electronics systems",
+      "Signal processing and communications",
+      "Relevant coursework in engineering applications"
     ]
   }
 ];
@@ -199,7 +213,7 @@ const Education: React.FC = () => {
         </div>
 
         {/* Summary Stats */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="glass-panel rounded-xl p-6 text-center border-t border-green-500/20">
             <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-green-500/10 flex items-center justify-center">
               <svg className="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -208,7 +222,7 @@ const Education: React.FC = () => {
               </svg>
             </div>
             <h3 className="text-3xl font-bold text-white mb-2">BSc</h3>
-            <p className="text-slate-400 text-sm">Electrical Engineering</p>
+            <p className="text-slate-400 text-sm">Shenkar (2014-2018)</p>
           </div>
 
           <div className="glass-panel rounded-xl p-6 text-center border-t border-brand-500/20">
@@ -218,7 +232,7 @@ const Education: React.FC = () => {
               </svg>
             </div>
             <h3 className="text-3xl font-bold text-white mb-2">99</h3>
-            <p className="text-slate-400 text-sm">Certification Grade</p>
+            <p className="text-slate-400 text-sm">Full Stack Grade</p>
           </div>
 
           <div className="glass-panel rounded-xl p-6 text-center border-t border-purple-500/20">
@@ -227,8 +241,18 @@ const Education: React.FC = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
             </div>
-            <h3 className="text-3xl font-bold text-white mb-2">4+</h3>
+            <h3 className="text-3xl font-bold text-white mb-2">5+</h3>
             <p className="text-slate-400 text-sm">Professional Courses</p>
+          </div>
+
+          <div className="glass-panel rounded-xl p-6 text-center border-t border-cyan-500/20">
+            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-cyan-500/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+              </svg>
+            </div>
+            <h3 className="text-3xl font-bold text-white mb-2">884+</h3>
+            <p className="text-slate-400 text-sm">Academic Hours</p>
           </div>
         </div>
       </div>
