@@ -24,7 +24,6 @@ This portfolio features:
 **Links:**
 - GitHub: [github.com/yosshor](https://github.com/yosshor) (32+ repos)
 - LinkedIn: [linkedin.com/in/yossishor](https://www.linkedin.com/in/yossishor/) (735+ followers)
-- Email: yossishor30@gmail.com
 - Work: [Mark-It-Ing](https://github.com/mark-it-ing)
 
 ## Run Locally
