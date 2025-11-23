@@ -54,7 +54,7 @@ const educationData: EducationItem[] = [
     period: "May 2021 - Aug 2021",
     type: "certification",
     description: "Practical training program in the field of servers, networks, SOC, and Firewalls in a joint program with leading cybersecurity companies.",
-    credentialUrl: "https://drive.google.com/file/d/1y70RxQCQXlNHRdhJN8km5sUFeFUk37kN/view?usp=sharing",
+    credentialUrl: "/cert/cyber-sec.png", //"https://drive.google.com/file/d/1y70RxQCQXlNHRdhJN8km5sUFeFUk37kN/view?usp=sharing",
     credentialId: "1y70RxQCQXlNHRdh",
     achievements: [
       "Server administration and configuration (Azure, Windows Server)",
