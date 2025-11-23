@@ -22,7 +22,7 @@ const educationData: EducationItem[] = [
     grade: "99",
     type: "certification",
     description: "Full Stack Web Development (Frontend & Backend) - 564-hour comprehensive program focused on both frontend and backend development.",
-    credentialUrl: "/certifications/int-cert-fullstack.png",
+    credentialUrl: "/cert/int-cert-fullstack.png",
     credentialId: "INT28281I40",
     achievements: [
       "Achieved exceptional grade of 99/100",
@@ -38,7 +38,7 @@ const educationData: EducationItem[] = [
     period: "Jun 2022 - Apr 2023",
     type: "certification",
     description: "Data Engineering course (320 academic hours) focusing on big data technologies and data pipeline development. Completed April 2023.",
-    credentialUrl: "/certifications/BigData.jpg",
+    credentialUrl: "/cert/BigData.jpg",
     achievements: [
       "320 hours of intensive training",
       "Python programming for data engineering",

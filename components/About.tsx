@@ -33,7 +33,7 @@ const About: React.FC = () => {
                 <span className="text-slate-600 dark:text-slate-400 font-medium">LinkedIn Followers</span>
               </div>
               <div className="p-6 bg-slate-100 dark:bg-dark-900/50 rounded-xl border border-slate-200 dark:border-white/5 text-center hover:bg-slate-200 dark:hover:bg-dark-900/80 transition-colors">
-                <span className="block text-4xl font-bold text-purple-500 dark:text-purple-400 mb-2">32+</span>
+                <span className="block text-4xl font-bold text-purple-500 dark:text-purple-400 mb-2">35+</span>
                 <span className="text-slate-600 dark:text-slate-400 font-medium">GitHub Repositories</span>
               </div>
               <div className="p-6 bg-slate-100 dark:bg-dark-900/50 rounded-xl border border-slate-200 dark:border-white/5 text-center hover:bg-slate-200 dark:hover:bg-dark-900/80 transition-colors">
